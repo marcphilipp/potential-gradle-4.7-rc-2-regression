@@ -1,0 +1,15 @@
+plugins {
+    id 'cpp-application'
+}
+
+repositories {
+    maven {
+        url "https://raw.githubusercontent.com/Open-RIO/Maven-Mirror/master/m2/"
+    }
+}
+
+application {
+    dependencies {
+        implementation 'openrio.mirror.third.ctre:CTRE-phoenix-cpp:5.2.2.0'
+    }
+}
